@@ -9,10 +9,8 @@ export default function Window({ name }) {
   let { hours, minutes, AMPM } = time()
   let tickingColon = ':'
   
-  setInterval(() => {
-    const newTime = time()
-  }, 1000)
-
+  // TODO: ADD REAL-TIME TIME DISPLAY
+  // TODO: ADD TICKING COLON FUNCTIONALITY
   setInterval(() => {
     tickingColon = tickingColon === ':' ? ' ' : ':'
   }, 500)

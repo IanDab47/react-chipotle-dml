@@ -1,0 +1,11 @@
+.type {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  background: var(--act);
+  font-size: 2rem;
+  border-radius: 50rem;
+  padding: 1rem 3rem;
+}
