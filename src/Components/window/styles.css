@@ -11,4 +11,5 @@
 
 .window :first-child {
   border-right: .1rem solid var(--fnt-main);
+  letter-spacing: .1rem;
 }

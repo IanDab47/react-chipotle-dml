@@ -22,7 +22,7 @@ export default function Cold({ order }) {
     <main className="blue">
       <Window name={'Salsa'} />
 
-      <SideBar name={order.name} />
+      <SideBar name={order.name} timePurchased={order.purch_at} expectedTime={order.expected_pickup} />
 
       <ItemType item={order.type} />
 

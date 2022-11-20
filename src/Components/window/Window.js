@@ -17,7 +17,7 @@ export default function Window({ name }) {
 
   return (
     <div className="window">
-      <p>{hours.toString().padStart(2, '0')}{tickingColon}{minutes.toString().padStart(2, '0')}{AMPM}</p>
+      <p>{hours.toString().padStart(2, '0')}{tickingColon}{minutes.toString().padStart(2, '0')} {AMPM}</p>
       <p>{name} Station</p>
     </div>
   )
