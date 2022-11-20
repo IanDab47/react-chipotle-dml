@@ -4,3 +4,5 @@ The date this directory was created: 11/19/2022
 The date the project was started: TBD
 The date the project was finished: TBD
 The total tracked time was: TBD
+
+This should cause an error
