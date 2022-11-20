@@ -3,7 +3,7 @@ export const time = () => {
   const time = new Date()
   const hours = (time.getHours() - 1) % 12 + 1
   const minutes = time.getMinutes()
-  const AMPM = hours >= 12 ? 'PM' : 'AM'
+  const AMPM = time.getHours() >= 12 ? 'PM' : 'AM'
 
   return { hours, minutes, AMPM }
 } 
