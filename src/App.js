@@ -1,5 +1,5 @@
 // React
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Pages
 import Hot from "./Screens/Hot";
