@@ -9,7 +9,6 @@ export default function Navbar({ setScreen }) {
 
   // Handler
   const handleClick = (e, newScreen) => {
-    console.log(e.target)
     // Toggle between screen
     if(active) active.classList.remove('active')
     e.target.classList.add('active')

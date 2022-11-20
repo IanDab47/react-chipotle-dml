@@ -1,0 +1,14 @@
+.window {
+  background: var(--nav-bg);
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.window > p {
+  display: inline-block;
+  padding: .25rem 1rem;
+}
+
+.window :first-child {
+  border-right: .1rem solid var(--fnt-main);
+}

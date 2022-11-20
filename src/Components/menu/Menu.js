@@ -1,5 +1,10 @@
+// Styles
+import "./styles.css"
+
 export default function Menu() {
   return (
-    <div>Menu</div>
+    <section className="menu-container">
+      Menu
+    </section>
   )
 }

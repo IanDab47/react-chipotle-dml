@@ -1,0 +1,7 @@
+.menu-container {
+  position: absolute;
+  bottom: 2.5rem; right: 1rem;
+  width: 80%;
+  height: calc(80% - 2.5rem);
+  background: var(--nav-bg);
+}

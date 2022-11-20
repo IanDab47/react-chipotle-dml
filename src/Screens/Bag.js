@@ -1,7 +1,12 @@
-import React from 'react'
+// Components
+import Window from "../Components/window/Window"
 
 export default function Bag() {
   return (
-    <div>Bag</div>
+    <main>
+      <Window name={'Bagging'}/>
+      
+      Bag
+    </main>
   )
 }
