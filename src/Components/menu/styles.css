@@ -19,3 +19,8 @@
   color: var(--fnt-dsb);
   border-radius: .2rem;
 }
+
+.purchased {
+  background: var(--act);
+  color: var(--fnt-main);
+}

@@ -27,7 +27,7 @@ export default function Hot() {
 
       <ItemType item={'Burrito'} />
 
-      <Menu type={'hot'} purchased={[]} items={hot}/>  
+      <Menu type={'hot'} purchased={['White Rice', 'Pinto Beans', 'Steak', 'Chicken']} items={hot}/>  
     </main>
   )
 }

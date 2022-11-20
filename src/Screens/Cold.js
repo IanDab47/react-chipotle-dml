@@ -26,7 +26,7 @@ export default function Cold() {
 
       <ItemType item={'Burrito'} />
 
-      <Menu type={'cold'} purchased={[]} items={cold}/>  
+      <Menu type={'cold'} purchased={['Mild Tomato', 'Medium Green', 'Sour Cream', 'Cheese']} items={cold}/>  
     </main>
   )
 }
