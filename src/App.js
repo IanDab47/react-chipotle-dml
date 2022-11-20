@@ -12,6 +12,17 @@ import Navbar from "./Components/nav/Navbar";
 // Styles
 import "./App.css";
 
+const currTime = new Date()
+
+const order = 
+	{ 
+		name: 'Ian Dabinett',
+		type: 'Burrito',
+		items: ['White Rice', 'Pinto Beans', 'Chicken', 'Steak', 'Mild Tomato', 'Sour Cream', 'Medium Green', 'Cheese'],
+		purch_at: currTime.getTime(),
+		expected_pickup: null,
+	}
+
 export default function App() {
 	// State
 	const [screen, setScreen] = useState('hot')
@@ -19,10 +30,10 @@ export default function App() {
 	return (
 		<div>
 			{screen === 'hot' ?
-				<Hot /> 
+				<Hot order={order} /> 
 				:
 				screen === 'cold' ?
-				<Cold />
+				<Cold order={order} />
 				:
 				<Bag />
 			}

@@ -17,16 +17,16 @@ const cold = [
   { name: 'Vinagrette',    row: 1, col: 1, span: 2 },
 ]
 
-export default function Cold() { 
+export default function Cold({ order }) { 
   return (
     <main className="blue">
-      <Window name={'Salsa'}/>
+      <Window name={'Salsa'} />
 
-      <SideBar />
+      <SideBar name={order.name} />
 
-      <ItemType item={'Burrito'} />
+      <ItemType item={order.type} />
 
-      <Menu type={'cold'} purchased={['Mild Tomato', 'Medium Green', 'Sour Cream', 'Cheese']} items={cold}/>  
+      <Menu purchased={order.items} items={cold}/>  
     </main>
   )
 }

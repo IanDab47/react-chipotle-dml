@@ -1,8 +1,8 @@
 main {
   display: grid;
-  grid-template-columns: 20.5% 78.5%;
+  grid-template-columns: 22.75% 76.75%;
   grid-template-rows: auto 7.5% 1fr;
-  gap: 1%;
+  gap: 0.5%;
   width: 100%;
   height: calc(100vh - 1.8rem);
   background: var(--bg-main);

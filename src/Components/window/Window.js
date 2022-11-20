@@ -2,7 +2,7 @@
 import { time } from "../../utils/time";
 
 // Styles
-import { useEffect } from "react"
+// import { useEffect } from "react"
 import "./styles.css"
 
 export default function Window({ name }) {

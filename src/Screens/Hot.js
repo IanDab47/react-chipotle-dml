@@ -18,16 +18,17 @@ const hot = [
   { name: 'Queso',       row: 4, col: 1, span: 1 }
 ]
 
-export default function Hot() {
+export default function Hot({ order }) {
+
   return (
-    <main className="blue">
-      <Window name={'Tortilla'}/>
+    <main className="purple">
+      <Window name={'Tortilla'} />
 
-      <SideBar />
+      <SideBar name={order.name} timePurchased={order.purch_at} expectedTime={order.expected_pickup}/>
 
-      <ItemType item={'Burrito'} />
+      <ItemType item={order.type} />
 
-      <Menu type={'hot'} purchased={['White Rice', 'Pinto Beans', 'Steak', 'Chicken']} items={hot}/>  
+      <Menu purchased={order.items} items={hot}/>
     </main>
   )
 }
