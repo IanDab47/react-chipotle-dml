@@ -4,11 +4,11 @@ import { useState } from "react"
 // Styles
 import "./styles.css"
 
-export default function Navbar({ screen, setScreen }) {
+export default function Navbar({ setScreen }) {
   const [active, setActive] = useState()
 
   // Handler
-  const handleClick = (e) => {
+  const handleClick = (e, newScreen) => {
     console.log(e.target)
     // Toggle between screen
     if(active) active.classList.remove('active')
@@ -16,14 +16,14 @@ export default function Navbar({ screen, setScreen }) {
     setActive(e.target)
 
     // Change screen
-    setScreen(e.target.value)
+    setScreen(newScreen)
   }
 
   return (
     <nav className="navbar">
-      <p className='' onClick={handleClick} value='hot'>Hot</p>
-      <p className='' onClick={handleClick} value='cold'>Cold</p>
-      <p className='' onClick={handleClick} value='bag'>Bag</p>
+      <div onClick={e => handleClick(e, 'hot')} value='hot'>Hot</div>
+      <div onClick={e => handleClick(e, 'cold')} value='cold'>Cold</div>
+      <div onClick={e => handleClick(e, 'bag')} value='bag'>Bag</div>
     </nav>
   )
 }
