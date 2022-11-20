@@ -1,0 +1,15 @@
+.navbar {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 100%;
+  background: gray;
+  text-align: right;
+  padding: .25rem;
+}
+
+.navbar > * {
+  display: inline;
+  cursor: pointer;
+  padding-inline: 1rem;
+  margin: 1rem;
+}
